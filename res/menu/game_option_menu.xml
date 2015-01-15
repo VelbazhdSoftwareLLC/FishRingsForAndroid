@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/reset_game"
+        android:title="@string/reset_option"/>
+    <item
+        android:id="@+id/shuffle_game"
+        android:title="@string/shuffle_option"/>
+    <item
+        android:id="@+id/help_game"
+        android:title="@string/help_option"/>
+    <item
+        android:id="@+id/about_game"
+        android:title="@string/about_option"/>
+
+</menu>
