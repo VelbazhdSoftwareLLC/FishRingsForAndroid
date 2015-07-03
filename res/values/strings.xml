@@ -16,5 +16,7 @@
 \n  This puzzle consists of three intersecting rings made up of number of colored balls. The rings of balls intersect at few places, so they share some of the balls. Each ring of balls can be rotated, so the balls can be mixed.
 \n  Newer versions can be checked at: 
 \n  http://github.com/TodorBalabanov/FishRingsForAndroid"</string>
+    <string name="title_activity_splash">Fish Rings</string>
+    <string name="redirect_activity_is_missing_message">Redirect activity is missing!</string>
 
 </resources>
