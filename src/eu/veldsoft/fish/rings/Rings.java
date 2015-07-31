@@ -31,27 +31,24 @@ public class Rings {
 		rdiam = (int) (2.5 * pdiam);
 
 		for (double i = 0, alpha = +3.5; i < 12; i++, alpha++) {
-			coordiantes[0][(int) i][0] = (int) (Math.min(width, height) / 2.0 + rdiam
-					* Math.cos(alpha * 2 * Math.PI / 12));
-			coordiantes[0][(int) i][1] = (int) (Math.min(width, height) / 2.0
-					- Math.sqrt(2.0) * rdiam / 2.0 + rdiam
-					* Math.sin(alpha * 2 * Math.PI / 12));
+			coordiantes[0][(int) i][0] = (int) (Math.min(width, height) / 2.0
+					+ rdiam * Math.cos(alpha * 2 * Math.PI / 12));
+			coordiantes[0][(int) i][1] = (int) (Math.min(width, height) / 2.0 - Math.sqrt(2.0) * rdiam / 2.0
+					+ rdiam * Math.sin(alpha * 2 * Math.PI / 12));
 		}
 
 		for (double i = 0, alpha = -3.5; i < 12; i++, alpha--) {
-			coordiantes[1][(int) i][0] = (int) (Math.min(width, height) / 2.0
-					+ Math.sqrt(2.0) * rdiam / 2.0 + rdiam
-					* Math.cos(alpha * 2 * Math.PI / 12));
-			coordiantes[1][(int) i][1] = (int) (Math.min(width, height) / 2.0 + rdiam
-					* Math.sin(alpha * 2 * Math.PI / 12));
+			coordiantes[1][(int) i][0] = (int) (Math.min(width, height) / 2.0 + Math.sqrt(2.0) * rdiam / 2.0
+					+ rdiam * Math.cos(alpha * 2 * Math.PI / 12));
+			coordiantes[1][(int) i][1] = (int) (Math.min(width, height) / 2.0
+					+ rdiam * Math.sin(alpha * 2 * Math.PI / 12));
 		}
 
 		for (double i = 0, alpha = -2.5; i < 12; i++, alpha++) {
-			coordiantes[2][(int) i][0] = (int) (Math.min(width, height) / 2.0
-					- Math.sqrt(2.0) * rdiam / 2.0 + rdiam
-					* Math.cos(alpha * 2 * Math.PI / 12));
-			coordiantes[2][(int) i][1] = (int) (Math.min(width, height) / 2.0 + rdiam
-					* Math.sin(alpha * 2 * Math.PI / 12));
+			coordiantes[2][(int) i][0] = (int) (Math.min(width, height) / 2.0 - Math.sqrt(2.0) * rdiam / 2.0
+					+ rdiam * Math.cos(alpha * 2 * Math.PI / 12));
+			coordiantes[2][(int) i][1] = (int) (Math.min(width, height) / 2.0
+					+ rdiam * Math.sin(alpha * 2 * Math.PI / 12));
 		}
 
 		rings[0][0] = 4;
@@ -71,40 +68,6 @@ public class Rings {
 		rings[2][11] = 1;
 
 		moves = 0;
-
-		// for (int i = 0; i < coordiantes.length; i++) {
-		// for (int j = 0; j < coordiantes[i].length; j++) {
-		// String color = "";
-		// switch (rings[i][j]) {
-		// case 1:
-		// color = "red";
-		// break;
-		// case 2:
-		// color = "green";
-		// break;
-		// case 3:
-		// color = "blue";
-		// break;
-		// case 4:
-		// color = "violet";
-		// break;
-		// }
-		// System.err
-		// .print("<ImageView android:id=\"@+id/imageView"
-		// + i
-		// + ((j < 10) ? "0" : "")
-		// + j
-		// +
-		// "\" android:layout_width=\"wrap_content\" android:layout_height=\"wrap_content\" android:layout_alignParentLeft=\"true\" android:layout_alignParentTop=\"true\" android:layout_marginLeft=\""
-		// + (coordiantes[i][j][0] - 10)
-		// + "dp\" android:layout_marginTop=\""
-		// + (coordiantes[i][j][1] - 10 + 60)
-		// +
-		// "dp\" android:adjustViewBounds=\"true\" android:maxHeight=\"20dp\" android:maxWidth=\"20dp\" android:src=\"@drawable/"
-		// + color + "\"/>");
-		// System.err.println();
-		// }
-		// }
 	}
 
 	void cwa() {
@@ -210,37 +173,37 @@ public class Rings {
 	}
 
 	boolean eval(String sequ) {
-		for (int i = -1, rep = 0; i < sequ.length();)
+		for (int i = -1, rep = 0; i < sequ.length() - 1;)
 			if (sequ.charAt(++i) == '+') {
-				if ('0' <= sequ.charAt(++i) && sequ.charAt(++i) <= '9')
-					rep = sequ.charAt(++i) - '0';
+				if ('0' <= sequ.charAt(++i) && sequ.charAt(i) <= '9')
+					rep = sequ.charAt(i++) - '0';
 				else
 					rep = 1;
 
-				if (sequ.charAt(++i) == 'A')
+				if (sequ.charAt(i) == 'A')
 					for (int j = 0; j < rep; j++)
 						cwa();
-				else if (sequ.charAt(++i) == 'B')
+				else if (sequ.charAt(i) == 'B')
 					for (int j = 0; j < rep; j++)
 						cwb();
-				else if (sequ.charAt(++i) == 'C')
+				else if (sequ.charAt(i) == 'C')
 					for (int j = 0; j < rep; j++)
 						cwc();
 				else
 					return false;
 			} else if (sequ.charAt(++i) == '-') {
-				if ('0' <= sequ.charAt(++i) && sequ.charAt(++i) <= '9')
-					rep = sequ.charAt(++i) - '0';
+				if ('0' <= sequ.charAt(++i) && sequ.charAt(i) <= '9')
+					rep = sequ.charAt(i++) - '0';
 				else
 					rep = 1;
 
-				if (sequ.charAt(++i) == 'A')
+				if (sequ.charAt(i) == 'A')
 					for (int j = 0; j < rep; j++)
 						ccwa();
-				else if (sequ.charAt(++i) == 'B')
+				else if (sequ.charAt(i) == 'B')
 					for (int j = 0; j < rep; j++)
 						ccwb();
-				else if (sequ.charAt(++i) == 'C')
+				else if (sequ.charAt(i) == 'C')
 					for (int j = 0; j < rep; j++)
 						ccwc();
 				else
@@ -260,9 +223,8 @@ public class Rings {
 			case 2:
 			case 4:
 			case 5:
-				if ((Math.pow(x - coordiantes[0][j][0], 2.0) + Math.pow(y
-						- coordiantes[0][j][1], 2.0)) < Math.pow(pdiam / 2.0,
-						2.0)) {
+				if ((Math.pow(x - coordiantes[0][j][0], 2.0) + Math.pow(y - coordiantes[0][j][1], 2.0)) < Math
+						.pow(pdiam / 2.0, 2.0)) {
 					cwa();
 					done = true;
 				}
@@ -271,9 +233,8 @@ public class Rings {
 			case 7:
 			case 9:
 			case 10:
-				if ((Math.pow(x - coordiantes[0][j][0], 2.0) + Math.pow(y
-						- coordiantes[0][j][1], 2.0)) < Math.pow(pdiam / 2.0,
-						2.0)) {
+				if ((Math.pow(x - coordiantes[0][j][0], 2.0) + Math.pow(y - coordiantes[0][j][1], 2.0)) < Math
+						.pow(pdiam / 2.0, 2.0)) {
 					ccwa();
 					done = true;
 				}
@@ -285,9 +246,8 @@ public class Rings {
 			case 0:
 			case 2:
 			case 5:
-				if ((Math.pow(x - coordiantes[1][j][0], 2.0) + Math.pow(y
-						- coordiantes[1][j][1], 2.0)) < Math.pow(pdiam / 2.0,
-						2.0)) {
+				if ((Math.pow(x - coordiantes[1][j][0], 2.0) + Math.pow(y - coordiantes[1][j][1], 2.0)) < Math
+						.pow(pdiam / 2.0, 2.0)) {
 					ccwb();
 					done = true;
 				}
@@ -297,9 +257,8 @@ public class Rings {
 			case 8:
 			case 9:
 			case 10:
-				if ((Math.pow(x - coordiantes[1][j][0], 2.0) + Math.pow(y
-						- coordiantes[1][j][1], 2.0)) < Math.pow(pdiam / 2.0,
-						2.0)) {
+				if ((Math.pow(x - coordiantes[1][j][0], 2.0) + Math.pow(y - coordiantes[1][j][1], 2.0)) < Math
+						.pow(pdiam / 2.0, 2.0)) {
 					cwb();
 					done = true;
 				}
@@ -311,9 +270,8 @@ public class Rings {
 			case 0:
 			case 2:
 			case 5:
-				if ((Math.pow(x - coordiantes[2][j][0], 2.0) + Math.pow(y
-						- coordiantes[2][j][1], 2.0)) < Math.pow(pdiam / 2.0,
-						2.0)) {
+				if ((Math.pow(x - coordiantes[2][j][0], 2.0) + Math.pow(y - coordiantes[2][j][1], 2.0)) < Math
+						.pow(pdiam / 2.0, 2.0)) {
 					ccwc();
 					done = true;
 				}
@@ -323,9 +281,8 @@ public class Rings {
 			case 8:
 			case 9:
 			case 10:
-				if ((Math.pow(x - coordiantes[2][j][0], 2.0) + Math.pow(y
-						- coordiantes[2][j][1], 2.0)) < Math.pow(pdiam / 2.0,
-						2.0)) {
+				if ((Math.pow(x - coordiantes[2][j][0], 2.0) + Math.pow(y - coordiantes[2][j][1], 2.0)) < Math
+						.pow(pdiam / 2.0, 2.0)) {
 					cwc();
 					done = true;
 				}
@@ -350,8 +307,7 @@ public class Rings {
 	}
 
 	int[] getState() {
-		int[] result = new int[rings[0].length + rings[1].length
-				+ rings[2].length];
+		int[] result = new int[rings[0].length + rings[1].length + rings[2].length];
 		for (int a = 0, j = 0; a < rings.length; a++) {
 			for (int i = 0; i < rings[a].length; i++, j++) {
 				result[j] = rings[a][i];

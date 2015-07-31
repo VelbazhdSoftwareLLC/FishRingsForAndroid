@@ -18,5 +18,10 @@
 \n  http://github.com/TodorBalabanov/FishRingsForAndroid"</string>
     <string name="title_activity_splash">Fish Rings</string>
     <string name="redirect_activity_is_missing_message">Redirect activity is missing!</string>
-
+    <string name="title_activity_instruction">Puzzle Formula Entry</string>
+    <string name="enter_formula_label">Enter Formula:</string>
+    <string name="run_formula_button_label">Run Formula</string>
+    <string name="run_formula_option">Formula</string>
+    <string name="incorrect_formula_warning">The formula is incorrect!</string>
+    
 </resources>

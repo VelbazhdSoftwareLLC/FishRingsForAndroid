@@ -14,6 +14,8 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 public class GameActivity extends Activity {
+	private static int FORMULA_REQUEST_ID = 1;
+
 	private Rings rings = null;
 
 	private ImageView views[] = {};
@@ -129,93 +131,72 @@ public class GameActivity extends Activity {
 		cartoon007Player = MediaPlayer.create(this, R.raw.cartoon007);
 		cartoon012Player = MediaPlayer.create(this, R.raw.cartoon012);
 
-		ImageView views[] = { (ImageView) findViewById(R.id.imageView000),
-				(ImageView) findViewById(R.id.imageView001),
-				(ImageView) findViewById(R.id.imageView002),
-				(ImageView) findViewById(R.id.imageView003),
-				(ImageView) findViewById(R.id.imageView004),
-				(ImageView) findViewById(R.id.imageView005),
-				(ImageView) findViewById(R.id.imageView006),
-				(ImageView) findViewById(R.id.imageView007),
-				(ImageView) findViewById(R.id.imageView008),
-				(ImageView) findViewById(R.id.imageView009),
-				(ImageView) findViewById(R.id.imageView010),
-				(ImageView) findViewById(R.id.imageView011),
-				(ImageView) findViewById(R.id.imageView100),
-				(ImageView) findViewById(R.id.imageView101),
-				(ImageView) findViewById(R.id.imageView102),
-				(ImageView) findViewById(R.id.imageView103),
-				(ImageView) findViewById(R.id.imageView104),
-				(ImageView) findViewById(R.id.imageView105),
-				(ImageView) findViewById(R.id.imageView106),
-				(ImageView) findViewById(R.id.imageView107),
-				(ImageView) findViewById(R.id.imageView108),
-				(ImageView) findViewById(R.id.imageView109),
-				(ImageView) findViewById(R.id.imageView110),
-				(ImageView) findViewById(R.id.imageView111),
-				(ImageView) findViewById(R.id.imageView200),
-				(ImageView) findViewById(R.id.imageView201),
-				(ImageView) findViewById(R.id.imageView202),
-				(ImageView) findViewById(R.id.imageView203),
-				(ImageView) findViewById(R.id.imageView204),
-				(ImageView) findViewById(R.id.imageView205),
-				(ImageView) findViewById(R.id.imageView206),
-				(ImageView) findViewById(R.id.imageView207),
-				(ImageView) findViewById(R.id.imageView208),
-				(ImageView) findViewById(R.id.imageView209),
-				(ImageView) findViewById(R.id.imageView210),
-				(ImageView) findViewById(R.id.imageView211), };
+		ImageView views[] = { (ImageView) findViewById(R.id.imageView000), (ImageView) findViewById(R.id.imageView001),
+				(ImageView) findViewById(R.id.imageView002), (ImageView) findViewById(R.id.imageView003),
+				(ImageView) findViewById(R.id.imageView004), (ImageView) findViewById(R.id.imageView005),
+				(ImageView) findViewById(R.id.imageView006), (ImageView) findViewById(R.id.imageView007),
+				(ImageView) findViewById(R.id.imageView008), (ImageView) findViewById(R.id.imageView009),
+				(ImageView) findViewById(R.id.imageView010), (ImageView) findViewById(R.id.imageView011),
+				(ImageView) findViewById(R.id.imageView100), (ImageView) findViewById(R.id.imageView101),
+				(ImageView) findViewById(R.id.imageView102), (ImageView) findViewById(R.id.imageView103),
+				(ImageView) findViewById(R.id.imageView104), (ImageView) findViewById(R.id.imageView105),
+				(ImageView) findViewById(R.id.imageView106), (ImageView) findViewById(R.id.imageView107),
+				(ImageView) findViewById(R.id.imageView108), (ImageView) findViewById(R.id.imageView109),
+				(ImageView) findViewById(R.id.imageView110), (ImageView) findViewById(R.id.imageView111),
+				(ImageView) findViewById(R.id.imageView200), (ImageView) findViewById(R.id.imageView201),
+				(ImageView) findViewById(R.id.imageView202), (ImageView) findViewById(R.id.imageView203),
+				(ImageView) findViewById(R.id.imageView204), (ImageView) findViewById(R.id.imageView205),
+				(ImageView) findViewById(R.id.imageView206), (ImageView) findViewById(R.id.imageView207),
+				(ImageView) findViewById(R.id.imageView208), (ImageView) findViewById(R.id.imageView209),
+				(ImageView) findViewById(R.id.imageView210), (ImageView) findViewById(R.id.imageView211), };
 		this.views = views;
 
 		findViewById(R.id.arrow01).setOnClickListener(aRingClockwiseClick);
-		findViewById(R.id.arrow02).setOnClickListener(
-				aRingCounterClockwiseClick);
+		findViewById(R.id.arrow02).setOnClickListener(aRingCounterClockwiseClick);
 		findViewById(R.id.arrow03).setOnClickListener(bRingClockwiseClick);
-		findViewById(R.id.arrow04).setOnClickListener(
-				bRingCounterClockwiseClick);
+		findViewById(R.id.arrow04).setOnClickListener(bRingCounterClockwiseClick);
 		findViewById(R.id.arrow05).setOnClickListener(cRingClockwiseClick);
-		findViewById(R.id.arrow06).setOnClickListener(
-				cRingCounterClockwiseClick);
+		findViewById(R.id.arrow06).setOnClickListener(cRingCounterClockwiseClick);
 
 		findViewById(R.id.imageView004).setOnClickListener(aRingClockwiseClick);
 		findViewById(R.id.imageView005).setOnClickListener(aRingClockwiseClick);
-		findViewById(R.id.imageView006).setOnClickListener(
-				aRingCounterClockwiseClick);
-		findViewById(R.id.imageView007).setOnClickListener(
-				aRingCounterClockwiseClick);
+		findViewById(R.id.imageView006).setOnClickListener(aRingCounterClockwiseClick);
+		findViewById(R.id.imageView007).setOnClickListener(aRingCounterClockwiseClick);
 
 		findViewById(R.id.imageView108).setOnClickListener(bRingClockwiseClick);
 		findViewById(R.id.imageView109).setOnClickListener(bRingClockwiseClick);
 		findViewById(R.id.imageView110).setOnClickListener(bRingClockwiseClick);
-		findViewById(R.id.imageView105).setOnClickListener(
-				bRingCounterClockwiseClick);
-		findViewById(R.id.imageView106).setOnClickListener(
-				bRingCounterClockwiseClick);
-		findViewById(R.id.imageView107).setOnClickListener(
-				bRingCounterClockwiseClick);
+		findViewById(R.id.imageView105).setOnClickListener(bRingCounterClockwiseClick);
+		findViewById(R.id.imageView106).setOnClickListener(bRingCounterClockwiseClick);
+		findViewById(R.id.imageView107).setOnClickListener(bRingCounterClockwiseClick);
 
 		findViewById(R.id.imageView208).setOnClickListener(cRingClockwiseClick);
 		findViewById(R.id.imageView209).setOnClickListener(cRingClockwiseClick);
 		findViewById(R.id.imageView210).setOnClickListener(cRingClockwiseClick);
-		findViewById(R.id.imageView205).setOnClickListener(
-				cRingCounterClockwiseClick);
-		findViewById(R.id.imageView206).setOnClickListener(
-				cRingCounterClockwiseClick);
-		findViewById(R.id.imageView207).setOnClickListener(
-				cRingCounterClockwiseClick);
+		findViewById(R.id.imageView205).setOnClickListener(cRingCounterClockwiseClick);
+		findViewById(R.id.imageView206).setOnClickListener(cRingCounterClockwiseClick);
+		findViewById(R.id.imageView207).setOnClickListener(cRingCounterClockwiseClick);
 
-		((ImageView) findViewById(R.id.ebinqoLogo))
-				.setOnClickListener(new OnClickListener() {
-					@Override
-					public void onClick(View view) {
-						GameActivity.this.startActivity(new Intent(
-								Intent.ACTION_VIEW, Uri.parse(getResources()
-										.getString(R.string.ebinqo_url))));
-					}
-				});
+		((ImageView) findViewById(R.id.ebinqoLogo)).setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				GameActivity.this.startActivity(
+						new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.ebinqo_url))));
+			}
+		});
 
-		rings = new Rings(this.getWindow().getDecorView().getWidth(), this
-				.getWindow().getDecorView().getHeight());
+		rings = new Rings(this.getWindow().getDecorView().getWidth(), this.getWindow().getDecorView().getHeight());
+	}
+
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		super.onActivityResult(requestCode, resultCode, data);
+
+		if (resultCode == RESULT_OK && requestCode == FORMULA_REQUEST_ID) {
+			String formula = data.getCharSequenceExtra(InstructionActivity.EXTRA_RESULT_FORMULA_KEY).toString();
+			rings.eval(formula.toUpperCase());
+			GameActivity.this.updateInfo();
+		}
 	}
 
 	@Override
@@ -238,13 +219,14 @@ public class GameActivity extends Activity {
 			cartoon012Player.start();
 			GameActivity.this.repaint();
 			break;
+		case R.id.run_formula:
+			startActivityForResult(new Intent(GameActivity.this, InstructionActivity.class), FORMULA_REQUEST_ID);
+			break;
 		case R.id.help_game:
-			GameActivity.this.startActivity(new Intent(GameActivity.this,
-					HelpActivity.class));
+			GameActivity.this.startActivity(new Intent(GameActivity.this, HelpActivity.class));
 			break;
 		case R.id.about_game:
-			GameActivity.this.startActivity(new Intent(GameActivity.this,
-					AboutActivity.class));
+			GameActivity.this.startActivity(new Intent(GameActivity.this, AboutActivity.class));
 			break;
 		}
 		return true;

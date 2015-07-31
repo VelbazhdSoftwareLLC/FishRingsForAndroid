@@ -8,6 +8,9 @@
         android:id="@+id/shuffle_game"
         android:title="@string/shuffle_option"/>
     <item
+        android:id="@+id/run_formula"
+        android:title="@string/run_formula_option"/>
+    <item
         android:id="@+id/help_game"
         android:title="@string/help_option"/>
     <item
