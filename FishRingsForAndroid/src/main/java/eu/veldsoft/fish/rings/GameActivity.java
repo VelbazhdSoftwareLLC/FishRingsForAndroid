@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -15,6 +14,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 public class GameActivity extends Activity {
+
     private static int FORMULA_REQUEST_ID = 1;
 
     private Rings rings = null;
@@ -216,11 +216,6 @@ public class GameActivity extends Activity {
         }
 
         if (item.getItemId() == R.id.shuffle_game) {
-//Rings original = new Rings();
-//String formula = "-6A";
-//original.reset();
-//rings.evaluate(formula);
-//Log.i("TAG01", formula + "\t" + rings.distance(original));
             rings.shuffle();
             cartoon012Player.start();
             GameActivity.this.repaint();
