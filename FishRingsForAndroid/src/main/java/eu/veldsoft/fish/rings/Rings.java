@@ -10,7 +10,7 @@ class Rings implements Cloneable, Comparable<Rings> {
     /**
      * Pseudorandom number generator instance.
      */
-    static final Random PRNG = new Random();
+    private static final Random PRNG = new Random();
 
     /**
      * Rings data structure.

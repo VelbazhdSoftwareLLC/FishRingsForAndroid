@@ -217,9 +217,10 @@ public class GameActivity extends Activity {
 
         if (item.getItemId() == R.id.shuffle_game) {
 //Rings original = new Rings();
-//Log.i("TAG01", "" + rings.distance(original));
-//rings.evaluate("-6A");
-//Log.i("TAG01", "" + rings.distance(original));
+//String formula = "-6A";
+//original.reset();
+//rings.evaluate(formula);
+//Log.i("TAG01", formula + "\t" + rings.distance(original));
             rings.shuffle();
             cartoon012Player.start();
             GameActivity.this.repaint();
