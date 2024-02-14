@@ -11,7 +11,21 @@
     <string name="title_activity_game">Fish Rings</string>
     <string name="title_activity_help">Help</string>
     <string name="title_activity_about">About</string>
-    <string name="help_text">"  It is a really simple game that has something similar with the Rubik’s Cube.\n  First you need to shuffle the puzzle and after that the goal is to return it in the starting state, using two directional rotations of the rings. To do this you should click on the tokens.\n  There are three rings, labeled as A (red), B (green), C (blue). The rings can be rotated in two directions (clockwise and counterclockwise). By this way six operations over the game can be constructed:\n  +A    Rotate ring A clockwise.\n  -A    Rotate ring A counterclockwise.\n  +B    Rotate ring B clockwise.\n  -B    Rotate ring B counterclockwise.\n  +C    Rotate ring C clockwise.\n  -C    Rotate ring C counterclockwise.\n  These operations can be used for expressions construction:\n  +A+B    Rotate ring A clockwise, after that ring B clockwise.\n  +A-A+B-B    Nothing changed after the rotation.\n  These expressions can be extended by inserting one digit between the sign and the letter:\n  +9A+9B    Rotate ring A clockwise nine times and after that the same with ring B.\n  By proper formulas puzzle can be solved every time."</string>
+    <string name="help_text">"  It is a really simple game that has something similar with the Rubik’s Cube.
+\n  First you need to shuffle the puzzle and after that the goal is to return it in the starting state, using two directional rotations of the rings. To do this you should click on the tokens.
+\n  There are three rings, labeled as A (red), B (green), C (blue). The rings can be rotated in two directions (clockwise and counterclockwise). By this way six operations over the game can be constructed:
+\n  +A    Rotate ring A clockwise.
+\n  -A    Rotate ring A counterclockwise.
+\n  +B    Rotate ring B clockwise.
+\n  -B    Rotate ring B counterclockwise.
+\n  +C    Rotate ring C clockwise.
+\n  -C    Rotate ring C counterclockwise.
+\n  These operations can be used for expressions construction:
+\n  +A+B    Rotate ring A clockwise, after that ring B clockwise.
+\n  +A-A+B-B    Nothing changed after the rotation.
+\n  These expressions can be extended by inserting one digit between the sign and the letter:
+\n  +9A+9B    Rotate ring A clockwise nine times and after that the same with ring B.
+\n  By proper formulas puzzle can be solved every time."</string>
     <string name="about_text">"  Fish Rings for Android is published by Velbazhd Software LLC.
 \n  This puzzle consists of three intersecting rings made up of number of colored balls. The rings of balls intersect at few places, so they share some of the balls. Each ring of balls can be rotated, so the balls can be mixed.
 \n  Newer versions can be checked at: 
@@ -23,5 +37,5 @@
     <string name="run_formula_button_label">Run Formula</string>
     <string name="run_formula_option">Formula</string>
     <string name="incorrect_formula_warning">The formula is incorrect!</string>
-    
+
 </resources>

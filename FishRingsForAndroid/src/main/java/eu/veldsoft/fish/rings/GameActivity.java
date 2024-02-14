@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -83,13 +84,13 @@ public class GameActivity extends Activity {
     }
 
     private void congratulate() {
-        if (rings.isDone() == true) {
+        if (rings.isSolved() == true) {
             Toast.makeText(this, R.string.you_win, Toast.LENGTH_LONG).show();
         }
     }
 
     private void sound() {
-        if (rings.isDone() == true) {
+        if (rings.isSolved() == true) {
             beep02Player.start();
         } else {
             hit01Player.start();
@@ -194,7 +195,7 @@ public class GameActivity extends Activity {
 
         if (resultCode == RESULT_OK && requestCode == FORMULA_REQUEST_ID) {
             String formula = data.getCharSequenceExtra(InstructionActivity.EXTRA_RESULT_FORMULA_KEY).toString();
-            rings.eval(formula.toUpperCase());
+            rings.evaluate(formula.toUpperCase());
             GameActivity.this.updateInfo();
         }
     }
@@ -215,6 +216,10 @@ public class GameActivity extends Activity {
         }
 
         if (item.getItemId() == R.id.shuffle_game) {
+//Rings original = new Rings();
+//Log.i("TAG01", "" + rings.distance(original));
+//rings.evaluate("-6A");
+//Log.i("TAG01", "" + rings.distance(original));
             rings.shuffle();
             cartoon012Player.start();
             GameActivity.this.repaint();
