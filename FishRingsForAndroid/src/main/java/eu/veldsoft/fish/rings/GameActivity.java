@@ -107,16 +107,16 @@ public class GameActivity extends Activity {
         for (int i = 0; i < views.length; i++) {
             switch (state[i]) {
                 case 1:
-                    views[i].setImageResource(R.drawable.red);
+                    views[i].setImageResource(R.mipmap.red);
                     break;
                 case 2:
-                    views[i].setImageResource(R.drawable.green);
+                    views[i].setImageResource(R.mipmap.green);
                     break;
                 case 3:
-                    views[i].setImageResource(R.drawable.blue);
+                    views[i].setImageResource(R.mipmap.blue);
                     break;
                 case 4:
-                    views[i].setImageResource(R.drawable.violet);
+                    views[i].setImageResource(R.mipmap.violet);
                     break;
             }
         }

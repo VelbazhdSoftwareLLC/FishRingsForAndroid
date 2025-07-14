@@ -16,7 +16,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="60dp"
         android:maxWidth="42dp"
-        android:src="@drawable/topaclockwise"
+        android:src="@mipmap/topaclockwise"
         android:alpha=".5" />
 
     <ImageView
@@ -30,7 +30,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="60dp"
         android:maxWidth="42dp"
-        android:src="@drawable/topbanticlockwise"
+        android:src="@mipmap/topbanticlockwise"
         android:alpha=".5" />
 
     <ImageView
@@ -44,7 +44,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="60dp"
         android:maxWidth="42dp"
-        android:src="@drawable/topbanticlockwise"
+        android:src="@mipmap/topbanticlockwise"
         android:alpha=".5" />
 
     <ImageView
@@ -58,7 +58,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="60dp"
         android:maxWidth="42dp"
-        android:src="@drawable/bottombclockwise"
+        android:src="@mipmap/bottombclockwise"
         android:alpha=".5" />
 
     <ImageView
@@ -72,7 +72,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="60dp"
         android:maxWidth="42dp"
-        android:src="@drawable/topaclockwise"
+        android:src="@mipmap/topaclockwise"
         android:alpha=".5" />
 
     <ImageView
@@ -86,7 +86,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="60dp"
         android:maxWidth="42dp"
-        android:src="@drawable/bottomaanticlockwise"
+        android:src="@mipmap/bottomaanticlockwise"
         android:alpha=".5" />
 
     <ImageView
@@ -100,7 +100,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="20dp"
         android:maxWidth="20dp"
-        android:src="@drawable/violet" />
+        android:src="@mipmap/violet" />
 
     <ImageView
         android:id="@+id/imageView001"
@@ -113,7 +113,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="20dp"
         android:maxWidth="20dp"
-        android:src="@drawable/red" />
+        android:src="@mipmap/red" />
 
     <ImageView
         android:id="@+id/imageView002"
@@ -126,7 +126,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="20dp"
         android:maxWidth="20dp"
-        android:src="@drawable/red" />
+        android:src="@mipmap/red" />
 
     <ImageView
         android:id="@+id/imageView003"
@@ -139,7 +139,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="20dp"
         android:maxWidth="20dp"
-        android:src="@drawable/red" />
+        android:src="@mipmap/red" />
 
     <ImageView
         android:id="@+id/imageView004"
@@ -152,7 +152,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="20dp"
         android:maxWidth="20dp"
-        android:src="@drawable/red" />
+        android:src="@mipmap/red" />
 
     <ImageView
         android:id="@+id/imageView005"
@@ -165,7 +165,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="20dp"
         android:maxWidth="20dp"
-        android:src="@drawable/red" />
+        android:src="@mipmap/red" />
 
     <ImageView
         android:id="@+id/imageView006"
@@ -178,7 +178,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="20dp"
         android:maxWidth="20dp"
-        android:src="@drawable/red" />
+        android:src="@mipmap/red" />
 
     <ImageView
         android:id="@+id/imageView007"
@@ -191,7 +191,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="20dp"
         android:maxWidth="20dp"
-        android:src="@drawable/red" />
+        android:src="@mipmap/red" />
 
     <ImageView
         android:id="@+id/imageView008"
@@ -204,7 +204,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="20dp"
         android:maxWidth="20dp"
-        android:src="@drawable/red" />
+        android:src="@mipmap/red" />
 
     <ImageView
         android:id="@+id/imageView009"
@@ -217,7 +217,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="20dp"
         android:maxWidth="20dp"
-        android:src="@drawable/red" />
+        android:src="@mipmap/red" />
 
     <ImageView
         android:id="@+id/imageView010"
@@ -230,7 +230,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="20dp"
         android:maxWidth="20dp"
-        android:src="@drawable/red" />
+        android:src="@mipmap/red" />
 
     <ImageView
         android:id="@+id/imageView011"
@@ -243,7 +243,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="20dp"
         android:maxWidth="20dp"
-        android:src="@drawable/violet" />
+        android:src="@mipmap/violet" />
 
     <ImageView
         android:id="@+id/imageView100"
@@ -256,7 +256,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="20dp"
         android:maxWidth="20dp"
-        android:src="@drawable/violet" />
+        android:src="@mipmap/violet" />
 
     <ImageView
         android:id="@+id/imageView101"
@@ -269,7 +269,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="20dp"
         android:maxWidth="20dp"
-        android:src="@drawable/violet" />
+        android:src="@mipmap/violet" />
 
     <ImageView
         android:id="@+id/imageView102"
@@ -282,7 +282,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="20dp"
         android:maxWidth="20dp"
-        android:src="@drawable/violet" />
+        android:src="@mipmap/violet" />
 
     <ImageView
         android:id="@+id/imageView103"
@@ -295,7 +295,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="20dp"
         android:maxWidth="20dp"
-        android:src="@drawable/violet" />
+        android:src="@mipmap/violet" />
 
     <ImageView
         android:id="@+id/imageView104"
@@ -308,7 +308,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="20dp"
         android:maxWidth="20dp"
-        android:src="@drawable/violet" />
+        android:src="@mipmap/violet" />
 
     <ImageView
         android:id="@+id/imageView105"
@@ -321,7 +321,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="20dp"
         android:maxWidth="20dp"
-        android:src="@drawable/green" />
+        android:src="@mipmap/green" />
 
     <ImageView
         android:id="@+id/imageView106"
@@ -334,7 +334,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="20dp"
         android:maxWidth="20dp"
-        android:src="@drawable/green" />
+        android:src="@mipmap/green" />
 
     <ImageView
         android:id="@+id/imageView107"
@@ -347,7 +347,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="20dp"
         android:maxWidth="20dp"
-        android:src="@drawable/green" />
+        android:src="@mipmap/green" />
 
     <ImageView
         android:id="@+id/imageView108"
@@ -360,7 +360,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="20dp"
         android:maxWidth="20dp"
-        android:src="@drawable/green" />
+        android:src="@mipmap/green" />
 
     <ImageView
         android:id="@+id/imageView109"
@@ -373,7 +373,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="20dp"
         android:maxWidth="20dp"
-        android:src="@drawable/green" />
+        android:src="@mipmap/green" />
 
     <ImageView
         android:id="@+id/imageView110"
@@ -386,7 +386,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="20dp"
         android:maxWidth="20dp"
-        android:src="@drawable/green" />
+        android:src="@mipmap/green" />
 
     <ImageView
         android:id="@+id/imageView111"
@@ -399,7 +399,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="20dp"
         android:maxWidth="20dp"
-        android:src="@drawable/red" />
+        android:src="@mipmap/red" />
 
     <ImageView
         android:id="@+id/imageView200"
@@ -412,7 +412,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="20dp"
         android:maxWidth="20dp"
-        android:src="@drawable/violet" />
+        android:src="@mipmap/violet" />
 
     <ImageView
         android:id="@+id/imageView201"
@@ -425,7 +425,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="20dp"
         android:maxWidth="20dp"
-        android:src="@drawable/violet" />
+        android:src="@mipmap/violet" />
 
     <ImageView
         android:id="@+id/imageView202"
@@ -438,7 +438,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="20dp"
         android:maxWidth="20dp"
-        android:src="@drawable/violet" />
+        android:src="@mipmap/violet" />
 
     <ImageView
         android:id="@+id/imageView203"
@@ -451,7 +451,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="20dp"
         android:maxWidth="20dp"
-        android:src="@drawable/violet" />
+        android:src="@mipmap/violet" />
 
     <ImageView
         android:id="@+id/imageView204"
@@ -464,7 +464,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="20dp"
         android:maxWidth="20dp"
-        android:src="@drawable/violet" />
+        android:src="@mipmap/violet" />
 
     <ImageView
         android:id="@+id/imageView205"
@@ -477,7 +477,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="20dp"
         android:maxWidth="20dp"
-        android:src="@drawable/blue" />
+        android:src="@mipmap/blue" />
 
     <ImageView
         android:id="@+id/imageView206"
@@ -490,7 +490,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="20dp"
         android:maxWidth="20dp"
-        android:src="@drawable/blue" />
+        android:src="@mipmap/blue" />
 
     <ImageView
         android:id="@+id/imageView207"
@@ -503,7 +503,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="20dp"
         android:maxWidth="20dp"
-        android:src="@drawable/blue" />
+        android:src="@mipmap/blue" />
 
     <ImageView
         android:id="@+id/imageView208"
@@ -516,7 +516,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="20dp"
         android:maxWidth="20dp"
-        android:src="@drawable/blue" />
+        android:src="@mipmap/blue" />
 
     <ImageView
         android:id="@+id/imageView209"
@@ -529,7 +529,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="20dp"
         android:maxWidth="20dp"
-        android:src="@drawable/blue" />
+        android:src="@mipmap/blue" />
 
     <ImageView
         android:id="@+id/imageView210"
@@ -542,7 +542,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="20dp"
         android:maxWidth="20dp"
-        android:src="@drawable/blue" />
+        android:src="@mipmap/blue" />
 
     <ImageView
         android:id="@+id/imageView211"
@@ -555,7 +555,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="20dp"
         android:maxWidth="20dp"
-        android:src="@drawable/red" />
+        android:src="@mipmap/red" />
 
     <ImageView
         android:id="@+id/ebinqoLogo"
@@ -564,6 +564,6 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="0dp"
-        android:src="@drawable/ebingo_logo" />
+        android:src="@mipmap/ebingo_logo" />
 
 </RelativeLayout>
